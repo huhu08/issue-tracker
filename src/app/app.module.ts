@@ -8,13 +8,16 @@ import { IssueListComponent } from './issue-list/issue-list.component';
 import { IssueReportComponent} from './issue-report/issue-report.component'
 import {ReactiveFormsModule} from '@angular/forms';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { EditIssueComponent } from './edit-issue/edit-issue.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     IssueListComponent,
     IssueReportComponent,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    EditIssueComponent
   ],
   imports: [
     BrowserModule,

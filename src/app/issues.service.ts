@@ -56,5 +56,17 @@ export class IssuesService {
     completed: new Date()
     };
     const index = this.issues.findIndex(i => i === issue); this.issues[index] = selectedIssue;
-    }  
+    } 
+
+   updateIssue(issueNo: number, issue: Issue) {
+    const existingIssue = this.issues.find(i => i.issueNo === issueNo);
+    if(existingIssue) {
+      const index = this.issues.indexOf(existingIssue);
+      this.issues[index] = {
+        ...existingIssue,
+        ...issue
+      };
+    }
+  }
+
 }
